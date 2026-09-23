@@ -8,7 +8,6 @@ const projects = [
     description: 'Modern appointment booking single-page web app with seamless scheduling, doctor/specialist selection, and dynamic slot reservation UI.',
     url: 'https://appoinment-pro-git-main-mouleesh0805-2099s-projects.vercel.app/',
     tags: ['React.js', 'Tailwind CSS', 'GSAP', 'Appointment Booking'],
-    mediaType: 'video',
     mediaSrc: '/assets/images/gif1.mp4',
     poster: '/assets/images/appointment-pro.svg',
     category: 'React & GSAP'
@@ -19,7 +18,6 @@ const projects = [
     description: 'Comprehensive career & employment opportunity portal allowing candidates to search openings, filter job roles, and submit applications.',
     url: 'https://job-opportunity-hub-nync.vercel.app',
     tags: ['React.js', 'Tailwind CSS', 'Search Filter', 'Job Board'],
-    mediaType: 'video',
     mediaSrc: '/assets/images/gif2.mp4',
     poster: '/assets/images/job-hub.svg',
     category: 'React & GSAP'
@@ -30,7 +28,6 @@ const projects = [
     description: 'Interactive student networking portal connecting campus members for event updates, academic discussion feeds, and resource sharing.',
     url: 'https://campus-connect-jadh.vercel.app',
     tags: ['React.js', 'Tailwind CSS', 'Campus Portal', 'Social UI'],
-    mediaType: 'video',
     mediaSrc: '/assets/images/gif3.mp4',
     poster: '/assets/images/campus-connect.svg',
     category: 'Web Apps'
@@ -41,8 +38,8 @@ const projects = [
     description: 'Smart public transit and bus tracking interface rendering live route locations, arrival ETAs, and interactive stop navigation.',
     url: 'https://where-is-my-bus-wheat.vercel.app',
     tags: ['JavaScript', 'Live Transit', 'Map UI', 'Tailwind CSS'],
-    mediaType: 'image',
-    mediaSrc: '/assets/images/where-is-my-bus.svg',
+    mediaSrc: '/assets/images/gif4.mp4',
+    poster: '/assets/images/where-is-my-bus.svg',
     category: 'Web Apps'
   },
   {
@@ -51,8 +48,8 @@ const projects = [
     description: 'Academic subject hub organizing BCA course syllabi, practical lab manuals, subject modules, and study resources.',
     url: 'https://college-subject.vercel.app',
     tags: ['HTML5/CSS3', 'JavaScript', 'Academic Portal', 'BCA Course'],
-    mediaType: 'image',
-    mediaSrc: '/assets/images/college-subject.svg',
+    mediaSrc: '/assets/images/gif5.mp4',
+    poster: '/assets/images/college-subject.svg',
     category: 'Web Apps'
   }
 ];
@@ -71,7 +68,7 @@ export default function Projects({ onOpenDemoModal }) {
           Explore Live Demo Applications
         </h2>
         <p class="text-slate-400 text-base sm:text-lg">
-          Each project features a distinct visual layout. Click <strong class="text-cyan-400">"Live Demo"</strong> to test it in the interactive frame viewer or open the site directly!
+          Featuring animated GIF visual loops on the front of every project card. Click <strong class="text-cyan-400">"Live Demo"</strong> to launch the interactive frame viewer or visit the live site!
         </p>
       </div>
 
@@ -82,27 +79,19 @@ export default function Projects({ onOpenDemoModal }) {
             key={project.id}
             class="glass-card rounded-2xl overflow-hidden border border-white/10 group hover:border-cyan-500/50 transition-all flex flex-col justify-between"
           >
-            {/* Visual Media Header */}
+            {/* Front Animated GIF Media Header */}
             <div class="gif-frame aspect-video bg-slate-950 relative overflow-hidden">
-              {project.mediaType === 'video' ? (
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  poster={project.poster}
-                  class="w-full h-full object-cover"
-                  src={project.mediaSrc}
-                ></video>
-              ) : (
-                <img
-                  src={project.mediaSrc}
-                  alt={project.title}
-                  class="w-full h-full object-cover"
-                />
-              )}
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={project.poster}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src={project.mediaSrc}
+              ></video>
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
-              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-cyan-500/90 text-slate-950 font-bold text-xs uppercase tracking-wider">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-cyan-500/90 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg">
                 Live Demo
               </span>
             </div>
