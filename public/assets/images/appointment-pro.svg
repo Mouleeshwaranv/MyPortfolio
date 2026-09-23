@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <rect width="600" height="380" fill="#0f172a" rx="16"/>
+  <rect x="1" y="1" width="598" height="378" fill="none" stroke="rgba(6, 182, 212, 0.3)" stroke-width="2" rx="15"/>
+  
+  <!-- Browser Header -->
+  <path d="M0 16 C0 7 7 0 16 0 L584 0 C593 0 600 7 600 16 L600 45 L0 45 Z" fill="#1e293b"/>
+  <circle cx="25" cy="22.5" r="5" fill="#ef4444"/>
+  <circle cx="42" cy="22.5" r="5" fill="#f59e0b"/>
+  <circle cx="59" cy="22.5" r="5" fill="#10b981"/>
+  <rect x="90" y="10" width="420" height="25" rx="6" fill="#0f172a"/>
+  <text x="300" y="27" font-family="'Fira Code', monospace" font-size="11" fill="#94a3b8" text-anchor="middle">https://appoinment-pro-git-main-mouleesh0805-2099s-projects.vercel.app</text>
+
+  <!-- Content Graphic: Calendar & Doctor Booking UI -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="320" height="260" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="35" font-family="sans-serif" font-weight="bold" font-size="18" fill="#f8fafc">Book Appointment</text>
+    <rect x="20" y="55" width="280" height="35" rx="8" fill="#334155"/>
+    <text x="35" y="77" font-family="sans-serif" font-size="12" fill="#94a3b8">Select Specialist / Doctor...</text>
+    
+    <!-- Mini Calendar Grid -->
+    <rect x="20" y="105" width="280" height="135" rx="8" fill="#0f172a"/>
+    <g fill="#06b6d4" opacity="0.8">
+      <rect x="35" y="120" width="30" height="25" rx="4"/>
+      <rect x="75" y="120" width="30" height="25" rx="4"/>
+      <rect x="115" y="120" width="30" height="25" rx="4" fill="#6366f1"/>
+      <rect x="155" y="120" width="30" height="25" rx="4"/>
+      <rect x="195" y="120" width="30" height="25" rx="4"/>
+      <rect x="235" y="120" width="30" height="25" rx="4"/>
+      
+      <rect x="35" y="155" width="30" height="25" rx="4"/>
+      <rect x="75" y="155" width="30" height="25" rx="4" fill="#10b981"/>
+      <rect x="115" y="155" width="30" height="25" rx="4"/>
+      <rect x="155" y="155" width="30" height="25" rx="4"/>
+      <rect x="195" y="155" width="30" height="25" rx="4"/>
+      <rect x="235" y="155" width="30" height="25" rx="4"/>
+    </g>
+  </g>
+
+  <!-- Sidebar Widget -->
+  <g transform="translate(380, 70)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#1e293b"/>
+    <circle cx="40" cy="40" r="20" fill="#6366f1"/>
+    <rect x="70" y="30" width="90" height="10" rx="5" fill="#f8fafc"/>
+    <rect x="70" y="48" width="60" height="8" rx="4" fill="#64748b"/>
+    <rect x="20" y="75" width="140" height="30" rx="6" fill="#06b6d4"/>
+    <text x="90" y="94" font-family="sans-serif" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">Confirm Slot</text>
+  </g>
+
+  <g transform="translate(380, 205)">
+    <rect x="0" y="0" width="180" height="125" rx="12" fill="#1e293b"/>
+    <text x="20" y="30" font-family="sans-serif" font-weight="bold" font-size="13" fill="#38bdf8">Live Status</text>
+    <rect x="20" y="45" width="140" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="45" width="100" height="8" rx="4" fill="#10b981"/>
+    <text x="20" y="75" font-family="sans-serif" font-size="11" fill="#94a3b8">Active Slots: 24</text>
+    <text x="20" y="95" font-family="sans-serif" font-size="11" fill="#94a3b8">Instant Sync: ON</text>
+  </g>
+</svg>

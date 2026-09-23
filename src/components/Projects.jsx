@@ -9,7 +9,7 @@ const projects = [
     url: 'https://appoinment-pro-git-main-mouleesh0805-2099s-projects.vercel.app/',
     tags: ['React.js', 'Tailwind CSS', 'GSAP', 'Appointment Booking'],
     mediaType: 'video',
-    mediaSrc: '/assets/images/gif2.mp4',
+    mediaSrc: '/assets/images/gif1.mp4',
     poster: '/assets/images/appointment-pro.svg',
     category: 'React & GSAP'
   },
@@ -20,7 +20,7 @@ const projects = [
     url: 'https://job-opportunity-hub-nync.vercel.app',
     tags: ['React.js', 'Tailwind CSS', 'Search Filter', 'Job Board'],
     mediaType: 'video',
-    mediaSrc: '/assets/images/gif3.mp4',
+    mediaSrc: '/assets/images/gif2.mp4',
     poster: '/assets/images/job-hub.svg',
     category: 'React & GSAP'
   },
@@ -30,8 +30,9 @@ const projects = [
     description: 'Interactive student networking portal connecting campus members for event updates, academic discussion feeds, and resource sharing.',
     url: 'https://campus-connect-jadh.vercel.app',
     tags: ['React.js', 'Tailwind CSS', 'Campus Portal', 'Social UI'],
-    mediaType: 'image',
-    mediaSrc: '/assets/images/campus-connect.svg',
+    mediaType: 'video',
+    mediaSrc: '/assets/images/gif3.mp4',
+    poster: '/assets/images/campus-connect.svg',
     category: 'Web Apps'
   },
   {
@@ -64,13 +65,13 @@ export default function Projects({ onOpenDemoModal }) {
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider border border-cyan-500/20">
           <Layers class="w-3.5 h-3.5" />
-          <span>Featured Projects</span>
+          <span>Featured Live Projects</span>
         </div>
         <h2 class="text-3xl sm:text-5xl font-heading font-bold text-white tracking-tight">
           Explore Live Demo Applications
         </h2>
         <p class="text-slate-400 text-base sm:text-lg">
-          Click <strong class="text-cyan-400">"Live Demo"</strong> on any project to test it in the interactive device previewer or launch the live site directly!
+          Each project features a distinct visual layout. Click <strong class="text-cyan-400">"Live Demo"</strong> to test it in the interactive frame viewer or open the site directly!
         </p>
       </div>
 

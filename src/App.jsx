@@ -36,9 +36,9 @@ export default function App() {
   }, [cursorPos]);
 
   return (
-    <div class="min-h-screen bg-[#0a0d14] text-slate-100 antialiased relative">
+    <div class="min-h-screen bg-[#0a0d14] text-slate-100 antialiased relative overflow-x-hidden">
       
-      {/* Custom Cursor */}
+      {/* Custom Glowing Cursor */}
       <div
         class="custom-cursor hidden md:block"
         style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
@@ -48,12 +48,24 @@ export default function App() {
         style={{ left: `${followerPos.x}px`, top: `${followerPos.y}px` }}
       ></div>
 
+      {/* GIF Background Design Layer */}
+      <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          class="w-full h-full object-cover opacity-[0.07] mix-blend-screen filter blur-[2px]"
+          src="/assets/images/gif1.mp4"
+        ></video>
+      </div>
+
       {/* Grid Pattern & Glows */}
-      <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0"></div>
+      <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-30 z-0"></div>
       <div class="hero-glow-1 z-0"></div>
       <div class="hero-glow-2 z-0"></div>
 
-      {/* App Components */}
+      {/* App Content */}
       <div class="relative z-10">
         <Navbar />
         <main class="pt-20">
