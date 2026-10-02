@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <section id="hero" class="min-h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto w-full text-center space-y-8">
+      <div class="max-w-5xl mx-auto w-full text-center space-y-8">
         
         {/* Status Badge */}
         <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass-card border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-medium mx-auto">
@@ -31,10 +31,10 @@ export default function Hero() {
         {/* Heading */}
         <div class="space-y-4">
           <h2 class="text-slate-400 text-lg sm:text-2xl font-medium tracking-wide">Hello, I'm</h2>
-          <h1 class="text-5xl sm:text-7xl lg:text-8xl font-heading font-extrabold tracking-tight text-white leading-none">
+          <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-white leading-none whitespace-nowrap">
             Mouleeshwaran V
           </h1>
-          <div class="text-2xl sm:text-4xl font-bold flex items-center justify-center gap-2.5 h-12 pt-2">
+          <div class="text-xl sm:text-3xl font-bold flex items-center justify-center gap-2.5 h-12 pt-2">
             <span class="text-slate-300">Specializing in</span>
             <span class="gradient-text font-heading transition-all duration-500">
               {roles[roleIndex]}

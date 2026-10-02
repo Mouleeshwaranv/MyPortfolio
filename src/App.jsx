@@ -48,15 +48,15 @@ export default function App() {
         style={{ left: `${followerPos.x}px`, top: `${followerPos.y}px` }}
       ></div>
 
-      {/* GIF Background Design Layer */}
+      {/* GIF2 Background Design Layer */}
       <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
-          class="w-full h-full object-cover opacity-[0.07] mix-blend-screen filter blur-[2px]"
-          src="/assets/images/gif1.mp4"
+          class="w-full h-full object-cover opacity-[0.08] mix-blend-screen filter blur-[2px]"
+          src="/assets/images/gif2.mp4"
         ></video>
       </div>
 
