@@ -9,7 +9,6 @@ export default function Footer() {
         </div>
         <div class="flex items-center gap-6">
           <a href="mailto:mouleesh05080@gmail.com" class="hover:text-cyan-400 transition-colors">Email</a>
-          <a href="tel:+919514800678" class="hover:text-cyan-400 transition-colors">Phone</a>
           <a href="#hero" class="hover:text-cyan-400 transition-colors">Back to Top ↑</a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Mail, Phone, MapPin, CheckCircle2 } from 'lucide-react';
+import { Send, Mail, MapPin, CheckCircle2 } from 'lucide-react';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -34,7 +34,7 @@ export default function Contact() {
               Let's Build Something Amazing Together!
             </h2>
             <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Open for frontend developer job opportunities, freelance web projects, and creative collaborations. Feel free to reach out via call, email, or message.
+              Open for frontend developer job opportunities, freelance web projects, and creative collaborations. Feel free to reach out via email or message.
             </p>
 
             <div class="space-y-4 pt-4">
@@ -45,16 +45,6 @@ export default function Contact() {
                 <div>
                   <div class="text-xs text-slate-400">Email Me</div>
                   <div class="text-sm font-semibold text-white group-hover:text-cyan-400">mouleesh05080@gmail.com</div>
-                </div>
-              </a>
-
-              <a href="tel:+919514800678" class="flex items-center gap-4 p-4 rounded-xl glass-card hover:border-indigo-500/40 transition-all group">
-                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Phone class="w-5 h-5" />
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Call / WhatsApp</div>
-                  <div class="text-sm font-semibold text-white group-hover:text-indigo-400">+91 95148 00678</div>
                 </div>
               </a>
 
